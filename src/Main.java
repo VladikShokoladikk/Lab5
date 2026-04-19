@@ -40,6 +40,7 @@ public class Main {
         commandManager.register("average_of_minutes_of_waiting", new AverageMinutesCommand(manager));
         commandManager.register("print_field_ascending_soundtrack_name", new PrintSoundtrackAscendingCommand(manager));
         commandManager.register("execute_script", new ExecuteScriptCommand(commandManager));
+        commandManager.register("eshkere", new EshkereCommand());
 
         // Главный цикл
         System.out.println("Введите команду (help — список команд):");
