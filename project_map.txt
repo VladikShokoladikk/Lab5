@@ -1,0 +1,19 @@
+src/
+├── model/
+│   ├── HumanBeing.java      ← главный класс (дан в задании)
+│   ├── Coordinates.java
+│   ├── Car.java
+│   └── WeaponType.java      ← enum
+├── collection/
+│   └── CollectionManager.java  ← хранит ArrayDeque, все операции с ней
+├── io/
+│   ├── CsvReader.java       ← чтение из файла (InputStreamReader)
+│   └── CsvWriter.java       ← запись в файл (FileOutputStream)
+├── commands/
+│   ├── Command.java         ← интерфейс команды
+│   ├── HelpCommand.java
+│   ├── AddCommand.java
+│   └── ...                  ← по одному классу на каждую команду
+├── input/
+│   └── HumanBeingInput.java ← интерактивный ввод объекта поле за полем
+└── Main.java                ← точка входа, главный цикл
