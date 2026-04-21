@@ -13,7 +13,7 @@ public class CsvReader {
 
     /**
      * Читает файл по пути из переменной окружения DATA_FILE.
-     * @return заполненная коллекция, или пустая если файл не найден/битый
+     * @return заполненная коллекция, или пустая если файл не найден/повреждён
      */
     public ArrayDeque<HumanBeing> read() {
         ArrayDeque<HumanBeing> result = new ArrayDeque<>();
@@ -51,6 +51,13 @@ public class CsvReader {
 
         return result;
     }
+
+    /**
+     * Парсинг строки с данными о HumanBeing из csv-файла
+     *
+     * @param line Строка, которую нужно парсить
+     * @return новый обьект класса HumanBeing
+     */
 
     private HumanBeing parseLine(String line) {
         String[] f = line.split(",");

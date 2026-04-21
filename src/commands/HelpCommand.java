@@ -12,7 +12,7 @@ public class HelpCommand implements Command {
     public void execute(String[] args) {
         commandManager.getCommands()
                 .forEach((name, cmd) ->
-                        System.out.printf("%-40s — %s%n", name, cmd.getDescription()));
+                        System.out.printf("%-40s — %s%n%n", name, cmd.getDescription()));
     }
 
     @Override

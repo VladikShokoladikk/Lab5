@@ -1,7 +1,13 @@
 package model;
 
+/**
+ * Класс оружия, которым владеет песонаж
+ */
 public enum WeaponType {
+    /** Топор */
     AXE,
+    /** Винтовка */
     RIFLE,
-    MACHINE_GUN;
+    /** Пулемёт */
+    MACHINE_GUN
 }

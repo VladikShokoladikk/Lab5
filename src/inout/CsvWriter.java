@@ -16,7 +16,8 @@ public class CsvWriter {
 
     /**
      * Записывает коллекцию в файл из переменной окружения DATA_FILE.
-     * @param collection коллекция для сохранения
+     *
+     * @param collection коллекция персонажей(HumanBeing) для сохранения
      */
     public void write(ArrayDeque<HumanBeing> collection) {
         String path = System.getenv("DATA_FILE");
@@ -39,6 +40,12 @@ public class CsvWriter {
         }
     }
 
+    /**
+     * Пакует персонажа и информацию о нём в строку для дальнейшей записи в csv файл
+     *
+     * @param h обьект класса HumanBeing для записи
+     * @return Возвращает все данные о персонаже в виде строки(string)
+     */
     private String toCsvLine(HumanBeing h) {
         return String.join(",",
                 h.getId().toString(),
